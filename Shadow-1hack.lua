@@ -86,3 +86,5 @@ local CreditsTab = Window:MakeTab({
 	PremiumOnly = false
 })
 CreditsTab:AddLabel("Discord - s0shadow0BG#4639(dm if bug)")
+
+CreditsTab:AddLabel("Helper's Discord - d3v1ldr4g0n#7637")
