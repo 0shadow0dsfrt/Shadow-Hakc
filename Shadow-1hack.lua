@@ -85,5 +85,4 @@ local CreditsTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-GamesTab:AddLabel("Discord - s0shadow0BG#4639(dm if bug)")
+CreditsTab:AddLabel("Discord - s0shadow0BG#4639(dm if bug)")
