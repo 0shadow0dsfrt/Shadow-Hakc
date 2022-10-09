@@ -79,3 +79,11 @@ GamesTab:AddButton({
 })
 
 GamesTab:AddLabel("Key for evade,doors: D4rkCarCrusher")
+
+local CreditsTab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+GamesTab:AddLabel("Discord - s0shadow0BG#4639(dm if bug)")
