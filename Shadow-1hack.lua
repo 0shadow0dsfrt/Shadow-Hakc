@@ -1,3 +1,4 @@
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Shadow hacking panel!", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionHubConfig"})
 
@@ -75,6 +76,20 @@ GamesTab:AddButton({
     Name = "VG Hub build a boat for treasure",
         Callback = function()
             loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()
+    end
+})
+
+GamesTab:AddButton({
+    Name = "Murder Mystery 2",
+        Callback = function()
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+    end
+})
+
+GamesTab:AddButton({
+    Name = "JailBreak",
+        Callback = function()
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak'),true))()
     end
 })
 
