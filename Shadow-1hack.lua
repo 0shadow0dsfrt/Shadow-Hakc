@@ -23,6 +23,13 @@ MainTab:AddButton({
 })
 
 MainTab:AddButton({
+	Name = "Chat faker",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+  	end    
+})
+
+MainTab:AddButton({
 	Name = "Admin commands",
 	Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
