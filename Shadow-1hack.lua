@@ -124,9 +124,9 @@ MainTab:AddButton({
 })
 
 MainTab:AddButton({
-	Name = "Turtle Spy",
+	Name = "Remote Spy",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/BDhSQqUU", true))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/7GmZyarT", true))()
   	end    
 })
 
