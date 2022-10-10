@@ -124,9 +124,9 @@ MainTab:AddButton({
 })
 
 MainTab:AddButton({
-	Name = "Simple Spy",
+	Name = "Turtle Spy",
 	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/legacy-ui/SimpleSpy.lua"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/BDhSQqUU", true))()
   	end    
 })
 
@@ -181,4 +181,5 @@ MainTab:AddButton({
 -- VALUES
 
 -----------------------------------------------------------------------------------
+end
 OrionLib:Init()
