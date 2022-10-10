@@ -124,9 +124,9 @@ MainTab:AddButton({
 })
 
 MainTab:AddButton({
-	Name = "Turtle Spy",
+	Name = "Simple Spy",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/BDhSQqUU", true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/legacy-ui/SimpleSpy.lua"))()
   	end    
 })
 
@@ -160,7 +160,7 @@ MainTab:AddButton({
   	end    
 })
 
---FUNCTIONS
+-- FUNCTIONS
 
 --  NOTIFICATIONS
 
