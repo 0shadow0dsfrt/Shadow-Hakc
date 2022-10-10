@@ -63,7 +63,7 @@ local PTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddSlider({
+PTab:AddSlider({
 	Name = "Slider",
 	Min = 50,
 	Max = 500,
@@ -76,7 +76,7 @@ Tab:AddSlider({
 	end    
 })
 
-Tab:AddSlider({
+PTab:AddSlider({
 	Name = "Slider",
 	Min = 0,
 	Max = 20,
