@@ -126,7 +126,7 @@ MainTab:AddButton({
 MainTab:AddButton({
 	Name = "Remote Spy",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/7GmZyarT", true))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/bCghX33W", true))()
   	end    
 })
 
