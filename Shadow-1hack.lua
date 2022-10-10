@@ -22,9 +22,9 @@ MainTab:AddButton({
 })
 
 MainTab:AddButton({
-	Name = "Simple Spy",
+	Name = "Turtle Spy",
 	Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/WsfWawhB"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/BDhSQqUU", true))()
   	end    
 })
 
