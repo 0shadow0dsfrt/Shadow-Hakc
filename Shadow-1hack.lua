@@ -1,10 +1,112 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Shadow hacking panel!", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionHubConfig"})
 
+-- TABS
+
 local MainTab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+
+local GamesTab = Window:MakeTab({
+	Name = "Other Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local PTab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local CreditsTab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--LABELS
+
+CreditsTab:AddLabel("Discord - s0shadow0BG#4639(dm if bug)")
+
+GamesTab:AddLabel("Key for evade,doors: D4rkCarCrusher")
+
+CreditsTab:AddLabel("Helper's Discord - d3v1ldr4g0n#7637")
+
+--SLIDERS
+
+PTab:AddSlider({
+	Name = "Slider",
+	Min = 50,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jump Power",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+	end    
+})
+
+PTab:AddSlider({
+	Name = "Slider",
+	Min = 16,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Walk speed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+	end    
+})
+
+--BUTTONS
+
+GamesTab:AddButton({
+	Name = "Doors,Evade",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/D4rk9690/My-scripts/main/d4rkfcker", true))()
+  	end
+})
+
+GamesTab:AddButton({
+    Name = "pet sim x",
+    Callback = function()
+        loadstring(game:GetObjects("rbxassetid://8194485654")[1].Source)("Petsi-X")
+    end
+})
+
+GamesTab:AddButton({
+    Name = "Build a boat for treasure",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/Loader/main/Loader.lua"))()
+    end
+})
+
+GamesTab:AddButton({
+    Name = "VG Hub build a boat for treasure",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()
+    end
+})
+
+
+GamesTab:AddButton({
+    Name = "Murder Mystery 2",
+        Callback = function()
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+    end
+})
+
+GamesTab:AddButton({
+    Name = "JailBreak",
+        Callback = function()
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak'),true))()
+    end
 })
 
 MainTab:AddButton({
@@ -58,93 +160,4 @@ MainTab:AddButton({
   	end    
 })
 
-local GamesTab = Window:MakeTab({
-	Name = "Other Games",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local PTab = Window:MakeTab({
-	Name = "Player",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-PTab:AddSlider({
-	Name = "Slider",
-	Min = 50,
-	Max = 500,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Jump Power",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
-	end    
-})
-
-PTab:AddSlider({
-	Name = "Slider",
-	Min = 16,
-	Max = 500,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Walk speed",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
-	end    
-})
-
-GamesTab:AddButton({
-	Name = "Doors,Evade",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/D4rk9690/My-scripts/main/d4rkfcker", true))()
-  	end
-})
-
-GamesTab:AddButton({
-    Name = "pet sim x",
-    Callback = function()
-        loadstring(game:GetObjects("rbxassetid://8194485654")[1].Source)("Petsi-X")
-    end
-})
-
-GamesTab:AddButton({
-    Name = "Build a boat for treasure",
-        Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/Loader/main/Loader.lua"))()
-    end
-})
-
-GamesTab:AddButton({
-    Name = "VG Hub build a boat for treasure",
-        Callback = function()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Build-A-Boat'))()
-    end
-})
-
-GamesTab:AddButton({
-    Name = "Murder Mystery 2",
-        Callback = function()
-            loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
-    end
-})
-
-GamesTab:AddButton({
-    Name = "JailBreak",
-        Callback = function()
-            loadstring(game:HttpGet(('https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak'),true))()
-    end
-})
-
-GamesTab:AddLabel("Key for evade,doors: D4rkCarCrusher")
-
-local CreditsTab = Window:MakeTab({
-	Name = "Credits",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-CreditsTab:AddLabel("Discord - s0shadow0BG#4639(dm if bug)")
-
-CreditsTab:AddLabel("Helper's Discord - d3v1ldr4g0n#7637")
+--FUNCTIONS
