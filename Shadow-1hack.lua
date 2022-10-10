@@ -1,4 +1,3 @@
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Shadow hacking panel!", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionHubConfig"})
 
@@ -58,6 +57,38 @@ local GamesTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local PTab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddSlider({
+	Name = "Slider",
+	Min = 50,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jump Power",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+	end    
+})
+
+Tab:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 20,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Walk speed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+	end    
+})
+
 GamesTab:AddButton({
 	Name = "Doors,Evade",
 	Callback = function()
@@ -110,3 +141,5 @@ local CreditsTab = Window:MakeTab({
 CreditsTab:AddLabel("Discord - s0shadow0BG#4639(dm if bug)")
 
 CreditsTab:AddLabel("Helper's Discord - d3v1ldr4g0n#7637")
+
+Tab:AddLabel("Label")
