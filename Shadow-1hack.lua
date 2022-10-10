@@ -78,8 +78,8 @@ PTab:AddSlider({
 
 PTab:AddSlider({
 	Name = "Slider",
-	Min = 0,
-	Max = 20,
+	Min = 16,
+	Max = 500,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
