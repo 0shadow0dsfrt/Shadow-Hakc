@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Shadow hacking panel!", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionHubConfig"})
+local Window = OrionLib:MakeWindow({Name = "Shadow hacking panel!", HidePremium = false, SaveConfig = true,IntroText = ShadowPanel, ConfigFolder = "OrionHubConfig"})
 
 -- TABS
 
@@ -163,6 +163,13 @@ MainTab:AddButton({
 -- FUNCTIONS
 
 --  NOTIFICATIONS
+
+OrionLib:MakeNotification({
+	Name = "Logged in",
+	Content = "Hello "..Player.Name..",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 
 -- SECTIONS
 
