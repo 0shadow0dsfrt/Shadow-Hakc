@@ -15,12 +15,17 @@ local GamesTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local G2Tab = Window:MakeTab({
+	Name = "Other Games 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
 local PTab = Window:MakeTab({
 	Name = "Player",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
 
 local CreditsTab = Window:MakeTab({
 	Name = "Credits",
@@ -73,31 +78,24 @@ GamesTab:AddButton({
   	end
 })
 
-GamesTab:AddButton({
+G2Tab:AddButton({
 	Name = "Arsenal V.G hub",
 	Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
   	end
 })
 
-GamesTab:AddButton({
+G2Tab:AddButton({
 	Name = "Arsenal OP",
 	Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/m3jxkeza'))()
   	end
 })
 
-GamesTab:AddButton({
+G2Tab:AddButton({
 	Name = "Arsenal unfair",
 	Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/gXVKyhxa'))()
-  	end
-})
-
-GamesTab:AddButton({
-	Name = "Arsenal Vesal",
-	Callback = function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/cWJAByKp'))()
   	end
 })
 
