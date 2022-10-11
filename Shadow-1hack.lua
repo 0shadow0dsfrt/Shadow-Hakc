@@ -74,6 +74,34 @@ GamesTab:AddButton({
 })
 
 GamesTab:AddButton({
+	Name = "Arsenal V.G hub",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end
+})
+
+GamesTab:AddButton({
+	Name = "Arsenal OP",
+	Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/m3jxkeza'))()
+  	end
+})
+
+GamesTab:AddButton({
+	Name = "Arsenal unfair",
+	Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/gXVKyhxa'))()
+  	end
+})
+
+GamesTab:AddButton({
+	Name = "Arsenal Vesal",
+	Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/cWJAByKp'))()
+  	end
+})
+
+GamesTab:AddButton({
     Name = "pet sim x",
     Callback = function()
         loadstring(game:GetObjects("rbxassetid://8194485654")[1].Source)("Petsi-X")
