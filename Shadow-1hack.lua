@@ -162,14 +162,7 @@ MainTab:AddButton({
 
 -- FUNCTIONS
 
---  NOTIFICATIONS
-
-OrionLib:MakeNotification({
-	Name = "Logged in",
-	Content = "Hello "..Player.Name..",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
+-- NOTIFICATIONS
 
 -- SECTIONS
 
