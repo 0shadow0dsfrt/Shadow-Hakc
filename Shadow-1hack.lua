@@ -86,6 +86,13 @@ G2Tab:AddButton({
 })
 
 G2Tab:AddButton({
+	Name = "Mining sim",
+	Callback = function()
+        loadstring(game:HttpGet('https://robloxscripts.co.uk/keysystem.lua'))('BaKnmd4C')
+  	end
+})
+
+G2Tab:AddButton({
 	Name = "Arsenal OP",
 	Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/m3jxkeza'))()
